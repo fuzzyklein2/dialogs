@@ -1,0 +1,12 @@
+../contrib/grep
+lazyme
+rich
+requests
+IPython
+nbformat
+pyperclip
+ipykernel
+config
+rainbow_logging
+tomlkit
+typed-argument-parser

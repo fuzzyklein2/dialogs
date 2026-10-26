@@ -16,7 +16,7 @@ class Alert(Dialog):
     def run(self):
         self.window = tk.Toplevel(self.parent)
         self.window.withdraw()
-        result = self.tk_msg_function(self.text, self.title, parent=self.window)
+        result = self.tk_msg_function( self.title, self.text, parent=self.window)
         self.window.destroy()
         return result
 
@@ -37,7 +37,7 @@ class ErrorDialog(Alert):
 
 class QuestionDialog(Alert):
     def __init__(self, text: str, title: str = "Question"):
-        super().__init__(title, text)
+        super().__init__(text, title)
         self.tk_msg_function = messagebox.askyesno
 
 class AboutDialog(Alert):

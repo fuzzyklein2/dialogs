@@ -5,7 +5,7 @@ from pygnition.configure import ARGUMENTS, PROGRAM_PATH
 from pygnition.stdinput import get_piped_input
 
 from .alerts import QuestionDialog
-#
+
 if __name__ == "__main__":
     s = get_piped_input()
     if s:
